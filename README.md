@@ -27,7 +27,7 @@ I built an end-to-end automated pipeline that:
 **Data Flow:**
 `Python Script (Simulation)` ➡️ `n8n Webhook` ➡️ `OpenAI (Logic Layer)` ➡️ `PostgreSQL (Storage)` ➡️ `R Shiny (Analytics)`
 
-````mermaid
+```mermaid
 graph LR
     A[📩 Incoming Claim] -->|Webhook| B(n8n Workflow)
     B -->|Extract Text| C{OpenAI GPT-4}
@@ -35,10 +35,3 @@ graph LR
     D -->|SQL Query| E[📊 R Shiny Dashboard]
     style C fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
-
-## 💻 How to Run This Project
-**Prerequisites:** Docker Desktop installed.
-
-1. **Clone the Repo:**
-   ```bash
-   git clone [https://github.com/ewetseklc/automated-claims-adjuster.git](https://github.com/ewetseklc/automated-claims-adjuster.git)
