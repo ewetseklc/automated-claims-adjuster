@@ -27,7 +27,7 @@ I built an end-to-end automated pipeline that:
 **Data Flow:**
 `Python Script (Simulation)` ➡️ `n8n Webhook` ➡️ `OpenAI (Logic Layer)` ➡️ `PostgreSQL (Storage)` ➡️ `R Shiny (Analytics)`
 
-```mermaid
+````mermaid
 graph LR
     A[📩 Incoming Claim] -->|Webhook| B(n8n Workflow)
     B -->|Extract Text| C{OpenAI GPT-4}
